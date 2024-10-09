@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Beauty Salon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .fade-in {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="bg-white py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-800">
+          beauty<span class="text-green-600">salon</span>.
+        </h1>
+        <nav>
+          <ul class="flex space-x-6 text-gray-600">
+            <li><a href="#" class="hover:text-green-600">Início</a></li>
+            <li><a href="#" class="hover:text-green-600">Sobre</a></li>
+            <li><a href="#" class="hover:text-green-600">Serviços</a></li>
+            <li><a href="#" class="hover:text-green-600">Depoimentos</a></li>
+            <li><a href="#" class="hover:text-green-600">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Seção Pricipal -->
+    <section class="bg-gray-100 py-16">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        <div>
+          <h2 class="text-4xl font-bold text-gray-900 fade-in">
+            Saúde natural para os seus cabelos
+          </h2>
+          <p class="mt-4 text-gray-600">
+            Um salão exclusivo em São Paulo, especializado em tratamentos
+            naturais.
+          </p>
+          <a
+            href="#"
+            id="agende-visita"
+            class="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-2xl"
+            >Agende sua visita</a
+          >
+        </div>
+        <div>
+          <img
+            src="./src/img/female-hairdresser-making-hairstyle-brunette-woman-beauty-salon.jpg"
+            alt="Salão de beleza"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section class="py-16">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <img
+            src="./src/img/sobre nós.jpg"
+            alt="Equipe do salão"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-gray-900">Sobre nós</h3>
+          <p class="mt-4 text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque at turpis felis. Nunc et metus a ipsum molestie aliquet
+            in at nisl. Sed dictum est quis ligula imperdiet luctus.
+          </p>
+          <p class="mt-4 text-gray-600">
+            Nulla ultrices consectetur ultrices. Duis mauris lacus, lobortis in
+            lacinia ut, convallis at nulla. Interdum et malesuada fames ac ante
+            ipsum primis in faucibus. Nullam nunc nisl, venenatis vitae nulla a,
+            faucibus tristique tellus. Suspendisse viverra odio nec iaculis
+            dapibus.
+          </p>
+          <p class="mt-4 text-gray-600">
+            Nam quis dolor pharetra turpis semper tristique. Quisque porttitor,
+            mi in lobortis viverra, sapien ipsum pellentesque ligula, sed
+            molestie massa ex ut ipsum. Morbi ante urna, viverra eget ante a,
+            scelerisque sodales erat. Nulla lacinia turpis eu mollis sagittis.
+            Phasellus consequat tempor massa, scelerisque sagittis lectus
+            aliquet eu. Donec faucibus arcu id auctor scelerisque. In vitae
+            justo nec tortor eleifend molestie. Vivamus faucibus sodales
+            sagittis. Proin mattis euismod odio id semper. Quisque lobortis
+            mauris in pharetra posuere.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-bold text-gray-900">Serviços</h3>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Com mais de 10 anos no mercado, o
+          <span class="text-green-500">Beautysalon</span> já conquistou clientes
+          de inúmeros países com seus tratamentos exclusivos e totalmente
+          naturais.
+        </p>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Terapia Capilar -->
+          <div
+            class="bg-white p-8 shadow-lg rounded-lg flex flex-col items-center fade-in"
+          >
+            <div
+              id="card-terapia"
+              class="text-green-500 mb-2 w-14 h-14 flex justify-center items-center"
+            >
+              <img src="./src/img/Icons/terapia.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Terapia capilar</h3>
+            <p class="mt-4 text-gray-600">
+              Terapia completa para couro cabeludo e fios, protegendo todos os
+              tipos de cabelos, inclusive os longos e finos.
+            </p>
+          </div>
+
+          <!-- Cortes -->
+          <div
+            class="bg-white p-8 shadow-lg rounded-lg flex flex-col items-center fade-in"
+          >
+            <div
+              id="card-cortes"
+              class="text-green-500 mb-2 w-14 h-14 flex justify-center items-center"
+            >
+              <img src="./src/img/Icons/tesoura.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Cortes</h3>
+            <p class="mt-4 text-gray-600">
+              A nossa equipe é repleta de profissionais renomados, famosos por
+              lançarem tendências com cortes diferenciados e clássicos.
+            </p>
+          </div>
+
+          <!-- Tratamentos -->
+          <div
+            class="bg-white p-8 shadow-lg rounded-lg flex flex-col items-center fade-in"
+          >
+            <div
+              id="card-tratamentos"
+              class="text-green-500 mb-2 w-14 h-14 flex justify-center items-center"
+            >
+              <img src="./src/img/Icons/cosmetico.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Tratamentos</h3>
+            <p class="mt-4 text-gray-600">
+              O Beautysalon conta com diversos tratamentos naturais e totalmente
+              veganos, para qualquer tipo de cabelo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="py-16">
+      <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-bold text-gray-900">
+          Depoimentos de quem já passou por aqui
+        </h3>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-8 shadow-lg rounded-lg flex flex-col items-center fade-in"
+          >
+            <p class="text-gray-600">
+              ¨Eu sou cliente do Beautysalon há 5 anos e não troco por nada!
+              Certamente meu cabelo mudo muito depois que eu comecei a tratar
+              somente com produtos naturais e veganos. São profissionais
+              incríveis e qualificados.¨
+            </p>
+            <img
+              src="./src/img/cliente01.jpg"
+              class="rounded-full w-16 h-16 mt-4 mb-0"
+              alt="Foto de perfil de uma mulher"
+            />
+            <p class="mt-4 text-green-500 font-bold">Mariana Souza</p>
+          </div>
+
+          <div
+            class="bg-white p-8 shadow-lg rounded-lg flex flex-col items-center fade-in"
+          >
+            <p class="text-gray-600">
+              ¨Minha mãe frequenta o salão há anos e me levou um dia para
+              conhecer. Minha experiência foi incrível, eu continuo fazendo o a
+              terapia capilar e isso salvou o meu cabelo. Adoro todos os
+              profissionais do Beautysalon.¨
+            </p>
+            <img
+              src="./src/img/cliente02.jpg"
+              class="rounded-full w-16 h-16 mt-4 mb-0"
+              alt="Foto de perfil de um homem"
+            />
+            <p class="mt-4 text-green-500 font-bold">Isabela Silva</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="bg-gray-100 py-16">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900">
+            Entre em contato com a gente!
+          </h3>
+          <p class="text-gray-600 mt-4">
+            Estamos sempre prontos para ouvir suas dúvidas e oferecer o melhor
+            serviço.
+          </p>
+          <a
+            id="entrar-contato"
+            href="#"
+            class="mt-6 inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-2xl"
+          >
+            <img class="w-8 h-8 mr-2" src="./src/img/Icons/whatsapp.png" alt="" />
+            Entrar em contato
+          </a>
+        </div>
+        <div class="space-y-4 text-gray-700">
+          <p class="flex items-center">
+            <img class="mr-2" src="./src/img/Icons/Contato.png" alt="" /> (99)
+            9999-9999
+          </p>
+          <p class="flex items-center">
+            <img class="mr-2" src="./src/img/Icons/pin.png" alt="" /> Rua Exemplo,
+            345
+          </p>
+          <p class="flex items-center">
+            <img class="mr-2" src="./src/img/Icons/mail.png" alt="" />
+            contato@beautysalon.com.br
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-green-500 text-white py-4 flex items-center">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="text-start">
+          <h1 class="text-4xl font-bold text-gray-800">
+            beauty<span class="text-white">salon</span>.
+          </h1>
+          <p class="mt-1">&copy; 2024 Beauty Salon.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="space-x-4 flex items-center">
+          <a href="https://www.instagram.com/souvtech_/" target="_blank">
+            <img src="./src/img/Icons/instagram.png" alt="instagram" />
+          </a>
+          <a href="https://www.instagram.com/souvtech_/" target="_blank">
+            <img src="./src/img/Icons/facebook.png" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/souvtech_/" target="_blank">
+            <img src="./src/img/Icons/youtube.png" alt="youtube" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+    </footer>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
