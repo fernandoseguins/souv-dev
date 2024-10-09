@@ -27,7 +27,8 @@
         <h1 class="text-2xl font-bold text-gray-800">
           beauty<span class="text-green-600">salon</span>.
         </h1>
-        <nav>
+
+        <nav class="hidden md:block">
           <ul class="flex space-x-6 text-gray-600">
             <li><a href="#" class="hover:text-green-600">Início</a></li>
             <li><a href="#" class="hover:text-green-600">Sobre</a></li>
@@ -36,7 +37,36 @@
             <li><a href="#" class="hover:text-green-600">Contato</a></li>
           </ul>
         </nav>
+
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-800"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
+
+      <nav id="mobile-menu" class="hidden md:hidden">
+        <ul class="flex flex-col space-y-4 text-gray-600 mt-4 text-center">
+          <li><a href="#" class="hover:text-green-600">Início</a></li>
+          <li><a href="#" class="hover:text-green-600">Sobre</a></li>
+          <li><a href="#" class="hover:text-green-600">Serviços</a></li>
+          <li><a href="#" class="hover:text-green-600">Depoimentos</a></li>
+          <li><a href="#" class="hover:text-green-600">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Seção Principal -->
@@ -263,7 +293,7 @@
     <!-- Rodapé -->
     <footer class="bg-green-500 text-white py-4">
       <div
-        class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0"
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 px-4"
       >
         <div class="text-center md:text-start">
           <h1 class="text-4xl font-bold text-gray-800">
@@ -272,15 +302,27 @@
           <p class="mt-1">&copy; 2024 Beauty Salon.</p>
           <p>Todos os direitos reservados.</p>
         </div>
-        <div class="space-x-4 flex justify-center md:justify-end">
+        <div class="flex justify-center md:justify-end space-x-4">
           <a href="https://www.instagram.com/souvtech_/" target="_blank">
-            <img src="./src/img/Icons/instagram.png" alt="instagram" />
+            <img
+              class="w-8 h-8"
+              src="./src/img/Icons/instagram.png"
+              alt="instagram"
+            />
           </a>
           <a href="https://www.instagram.com/souvtech_/" target="_blank">
-            <img src="./src/img/Icons/facebook.png" alt="facebook" />
+            <img
+              class="w-8 h-8"
+              src="./src/img/Icons/facebook.png"
+              alt="facebook"
+            />
           </a>
           <a href="https://www.instagram.com/souvtech_/" target="_blank">
-            <img src="./src/img/Icons/youtube.png" alt="youtube" />
+            <img
+              class="w-8 h-8"
+              src="./src/img/Icons/youtube.png"
+              alt="youtube"
+            />
           </a>
         </div>
       </div>
